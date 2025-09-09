@@ -1,6 +1,19 @@
 const express = require('express')
+const { Client } = require ('pg')
+
+require('dotenv').config();
+const apiKey = process.env.API_KEY;
+console.log(apiKey);
+
 const app = express()
 const port = 3000
+
+//ta faltando escrever a conexão e conectar as variaveis de ambiente no arquivo index
+
+// const client =new Client ({
+//     user: "postgres",
+//     password: 
+// })
 
 class Produto {
     constructor(
